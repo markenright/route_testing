@@ -1,0 +1,11 @@
+<h1>hey its me your user</h1>
+
+<%= 'Name: ' + @user.name.to_s %> </br>
+<%= 'Occupation: ' + @user.job.to_s %>
+
+<ul>
+  <li><%= link_to "Edit", edit_user_path(@user) %></li>
+  <li><%= link_to "Destroy", user_path(@user),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></li>
+</ul>
